@@ -1,0 +1,25 @@
+// A C++ program that uses Logical Not or ! on boolean
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    // we are making variable store bool expression of false
+    // and true, it can be also written as (1) for 'true' and
+    // (0) for 'false'
+    bool is_it_true = false;
+    bool is_it_false = true;
+ 
+    // This code below print first false (0) and then true
+    // (1) cause of we have used 'not' (!) operator in second
+    // case
+    cout << is_it_true << endl;
+    cout << !is_it_true << endl;
+ 
+    // This code below print first true (1) and then false
+    // (0) cause of we have used 'not' (!) operator in second
+    // case
+    cout << is_it_false << endl;
+    cout << !is_it_false << endl;
+    return 0;
+}
