@@ -1,0 +1,10 @@
+
+def f():
+  
+    # local variable
+    s = "I love Geeksforgeeks"
+    print(s)
+  
+  
+# Driver code
+f()
