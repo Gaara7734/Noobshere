@@ -1,0 +1,14 @@
+import csv
+#Reading
+with open("test.csv", "r") as file:
+    csv_reader = csv.reader(file)
+    for row in csv_reader:
+        print(row)
+file.close()
+#Writing
+header = ["ID", "Languages"]
+csv_data = [234, "Python", 344, "JavaScript", 567, "Dart"]
+with open("test2.csv", 'w', newline="") as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow(header)
+    csv_writer.writerows(csv_data)
